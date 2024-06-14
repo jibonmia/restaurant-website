@@ -1,0 +1,21 @@
+.footer-area{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:black;
+}
+.footer-area div{
+    margin: 30px;
+    color: white;
+    font-size: large;
+}
+ul li{
+    margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .footer-area{
+        display: flex;
+        flex-direction: column;
+    }
+}

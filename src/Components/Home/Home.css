@@ -1,0 +1,99 @@
+.home-container{
+    display: flex;  
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image:url('../../Images/bacak.jpg');
+    background-size: cover;
+}
+.home-content{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 0 20px 30px;
+    color: white;
+}
+.home-content {
+    animation: slideIn 2s ease-in-out; /* Adjust the duration and easing as needed */
+  }
+.home-content h1{
+    font-size: 0.7in;
+    margin: 0;
+}
+.home-content span{
+    color: orange;
+}
+.home-image{
+    flex: 1;
+    border-radius: 100%;
+    padding: 40px;
+    overflow: hidden;
+}
+/* booking content css start here */
+.booking-container{
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+.booking-image{
+  width: 100%;
+}
+.booking-image img{
+  width: 100%;
+  height: 100%;
+  
+}
+.booking-content{
+  padding: 10px 0 10px 20px;
+  width: 100%;
+  background-color: #060e1d;
+}
+.booking-content h2{
+  color: orange;
+  margin-bottom: 5px;
+}
+.booking-content p{
+  color: white;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 0.5in;
+}
+.btn{
+  text-align: center;
+  margin: 10px;
+}
+.from{
+  text-align: center;
+}
+.from input{
+  padding: 20px 30px;
+  margin: 10px;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .home-image img {
+      animation: App-logo-spin infinite 20s linear;
+    }}
+.home-image img{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ 

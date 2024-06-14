@@ -1,0 +1,116 @@
+/* Header.css */
+body{
+  margin: auto;
+  max-width: 1450px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header {
+    display: flex;
+    top: 0;
+    z-index: 1;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color:black;
+    color: white;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: orange;
+    font-size: 40px;
+  }
+  
+  .nav {
+    display: flex;
+    padding: 20px 0;
+  }
+  
+  .nav.open {
+    display: block;
+  }
+  .nav a{
+    color: aliceblue;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: large;
+  }
+  .nav a:hover{
+    color: orange;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .dropdown {
+    position: relative;
+    cursor: pointer;
+    font-size: large;
+    margin-left: 10px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-content a {
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .Btn{
+    font-size: large;
+    width: 180px;
+    color: white;
+    border: none;
+    padding: 10px;
+    background-color: orange;
+  }
+  @media only screen and (max-width: 975px) {
+    .logo {
+      color: orange;
+      font-size: 25px;
+    }
+    .nav a{
+      margin-left: 10px;
+      font-size: medium;
+    }
+    .Btn{
+      font-size: medium;
+      width: 150px;
+      
+    }
+}
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
